@@ -1,0 +1,19 @@
+
+package JavaBasics;
+import java.util.Scanner;
+
+public class Fibo {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a number");
+        int n = sc.nextInt();
+        int a=0,b=1,fibo;
+        for(int i=1;i<=n;i++) {
+            System.out.print(a);
+            fibo = a + b;
+            a = b;
+            b = fibo;
+        }
+    }
+}
+
